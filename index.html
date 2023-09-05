@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Input1-->
+    <div id="container">
+        <center><div id="input" style="margin-top: 20px;">
+            <input type="number" id="inputSl" placeholder="Nhập số lần" style="width: 200px; height: 40px;">
+        </div></center>
+        <center><div id="input" style="margin-top: 20px;">
+            <input type="number" id="SSDC" step="any" placeholder="Nhập SSDC" style="width: 200px; height: 40px;">
+        </div></center>
+        <center><div id="input" style="margin-top: 20px;">
+            <select id="mySelect" style="width: 220px; height: 40px; padding-left: 10px; border: none;">
+                <option value="dv">Đơn Vị Đo</option>
+                <option value="km">km</option>
+                <option value="hm">hm</option>
+                <option value="dam">dam</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+
+                <option value="tan">Tấn</option>
+                <option value="ta">Tạ</option>
+                <option value="yen">Yến</option>
+                <option value="kg">Kg</option>
+                <option value="hg">hg</option>
+                <option value="dag">dag</option>
+                <option value="g">g</option>
+
+                <option value="h">h (giờ)</option>
+                <option value="mi">' (phút) </option>
+                <option value="s">s (giây)</option>
+
+            </select>
+        </div></center>
+
+        <!--Button-to-input2-->
+        <center><input type="submit" value="BẮT ĐẦU" style="width: 200px; height: 40px; margin-top: 20px;" onclick="toInput2()"></center>
+    </div>
+
+    <!--Input2-->
+    <div id="board">
+        <center><table class="types">
+            <tr>
+                <th>SL</th>
+                <th id="case1"></th>
+                <th id="case2"></th>
+            </tr>
+        </table></center>
+        <center><table class="types2">
+
+        </table></center>
+
+        <center><table class="types">
+            <tr>
+                <th>Trung Bình</th>
+                <th id="avgOut"></th>
+                <th id="avgOut2"></th>
+            </tr>
+        </table></center>
+            <!--<tr id="underLine">
+                <td>1</td>
+                <td><input type="number" id="number1" placeholder="Nhập..."></td>
+                <td id="delEvg"></td>
+            </tr>-->
+            <center><input type="submit" id="outPut" value="Tính" style="width: 200px; height: 40px; margin-top: 20px;" onclick="outPut()"></center>
+            <div style="margin: 30px;" id="End">
+                <p id="TD">Sai số tuyệt đối:</p>
+                <p id="TUONGD">Sai số tương đối:</p>
+                <p id="KQ">Kết quả của phép đo:</p>
+            </div>
+
+
+
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
